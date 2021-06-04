@@ -1,0 +1,64 @@
+@use '../abstracts' as abs;
+
+.filter {
+  padding: 1rem 1.8rem;
+
+  @include abs.lg {
+    padding: 1rem 3.5rem;
+  }
+
+  > div {
+    background: abs.$gray;
+    padding: 1.875rem;
+    border-radius: 10px;
+    max-width: 400px;
+    // margin: 0 auto;
+  }
+
+  &__head {
+    padding-bottom: 0.8rem;
+    border-bottom: 1px dotted #b3b7c2;
+    p {
+      text-transform: uppercase;
+      font-family: abs.$fontOswald;
+      font-weight: 300;
+      font-size: 1.25rem;
+    }
+  }
+
+  &__body {
+    margin-top: 1.2rem;
+
+    form {
+      label {
+        text-transform: capitalize;
+      }
+      select {
+        width: 100%;
+        background: abs.$white;
+        outline: none;
+        border: 0;
+        padding: 0.7rem;
+        border-radius: 5px;
+        margin: 0.4rem 0;
+      }
+      .btn {
+        width: 100%;
+        background: abs.$yellow;
+        color: abs.$white;
+        padding: 0.7rem;
+        border-radius: 5px;
+        border: 0;
+        outline: none;
+        font-family: abs.$fontMaven;
+        font-weight: 500;
+        transition: opacity 200ms ease-in-out;
+        cursor: pointer;
+
+        &:hover {
+          opacity: 0.9;
+        }
+      }
+    }
+  }
+}

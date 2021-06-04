@@ -47,6 +47,31 @@
       </form>
     </nav>
 
+    <!-- Filter Section -->
+    <section class="filter">
+      <div>
+        <div class="filter__head flex flex-jc-sb flex-ai-c">
+          <p>Filters</p>
+          <i class="fas fa-chevron-down"></i>
+        </div>
+        <div class="filter__body">
+          <form>
+            <label>Filter results by</label>
+            <br />
+            <select id="select">
+              <option value="latest" selected>Latest</option>
+              <option value="now_playing">Now Playing</option>
+              <option value="popular">Popular</option>
+              <option value="top_rated">Top Rated</option>
+              <option value="upcoming">Upcoming</option>
+            </select>
+            <br />
+            <button type="submit" class="btn">Search</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
     <!-- Scripts -->
     <script type="module" src="./scripts/main.js"></script>
   </body>
