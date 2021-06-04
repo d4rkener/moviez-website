@@ -1,0 +1,76 @@
+@use '../abstracts' as abs;
+
+.navigation {
+  padding: 1rem 1.8rem;
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 25%);
+
+  @include abs.lg {
+    padding: 1rem 3.5rem;
+  }
+
+  .left-col {
+    i {
+      color: abs.$yellow;
+      font-size: 1.4665rem;
+    }
+
+    span {
+      font-family: abs.$fontOswald;
+      text-transform: uppercase;
+      font-size: 1.4665rem;
+      font-weight: 500;
+      color: abs.$dark;
+    }
+  }
+
+  .right-col {
+    .icons {
+      i {
+        font-size: 1.2rem;
+        cursor: pointer;
+      }
+    }
+
+    form {
+      position: relative;
+
+      @include abs.lg {
+        display: block;
+      }
+
+      > i {
+        position: absolute;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        margin-left: 1.3rem;
+        color: abs.$dark;
+      }
+
+      input {
+        padding: 0.7rem 0.5rem 0.7rem 2.7rem;
+        width: 15rem;
+        border-radius: 5px;
+        border: 0;
+        outline: none;
+        background: abs.$gray;
+        font-family: abs.$fontMaven;
+        font-weight: 400;
+      }
+    }
+  }
+
+  > form {
+    margin-top: 15px;
+
+    input {
+      width: 100%;
+      padding: 0.7rem 0.5rem;
+      border-radius: 5px;
+      border: 0;
+      outline: none;
+      background: abs.$gray;
+      font-family: abs.$fontMaven;
+      font-weight: 400;
+    }
+  }
+}

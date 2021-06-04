@@ -17,7 +17,35 @@
     <title>Vite App</title>
   </head>
   <body>
-    <h1>Hello, World</h1>
+    <!-- Navigation -->
+    <nav class="navigation">
+      <div class="flex flex-jc-sb flex-ai-c">
+        <div class="left-col">
+          <i class="fas fa-video"></i><span> Moviez</span>
+        </div>
+        <div class="right-col">
+          <div class="icons hide-desktop">
+            <i class="fas fa-search" id="search"></i>
+            <i class="fas fa-times hide" id="times"></i>
+          </div>
+          <form id="desktopForm" class="hide">
+            <i class="fas fa-search" id="search"></i>
+            <input
+              type="text"
+              placeholder="Search Movies ..."
+              id="desktopFormInput"
+            />
+          </form>
+        </div>
+      </div>
+      <form id="mobileForm" class="hide-desktop hide">
+        <input
+          type="text"
+          placeholder="Search Movies ..."
+          id="mobileFormInput"
+        />
+      </form>
+    </nav>
 
     <!-- Scripts -->
     <script type="module" src="./scripts/main.js"></script>
