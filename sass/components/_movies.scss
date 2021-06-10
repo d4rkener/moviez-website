@@ -1,0 +1,62 @@
+@use '../abstracts' as abs;
+
+.movies {
+  margin-top: 2rem;
+
+  .movie-title {
+    margin-bottom: 0.7rem;
+    text-transform: capitalize;
+  }
+
+  &__container {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  }
+
+  .movie {
+    background: abs.$gray;
+    border-radius: 5px;
+    max-width: 300px;
+    position: relative;
+
+    &__rating {
+      position: absolute;
+      right: -3px;
+      top: -10px;
+      width: 35px;
+      height: 35px;
+      background: abs.$yellow;
+      border-radius: 50px;
+      color: abs.$dark;
+      display: flex;
+      font-weight: 500;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &__img {
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+    }
+
+    &__content {
+      padding: 1.2rem;
+    }
+
+    &__name {
+      margin-top: 0.5rem;
+    }
+
+    &__description {
+      margin: 0.6rem 0;
+      opacity: 0.9;
+
+      span {
+        color: abs.$yellow;
+        font-weight: 500;
+        cursor: pointer;
+      }
+    }
+  }
+}

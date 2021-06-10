@@ -1,18 +1,11 @@
 @use '../abstracts' as abs;
 
 .filter {
-  padding: 1rem 1.8rem;
-
-  @include abs.lg {
-    padding: 1rem 3.5rem;
-  }
-
   > div {
     background: abs.$gray;
     padding: 1.875rem;
     border-radius: 10px;
     max-width: 400px;
-    // margin: 0 auto;
   }
 
   &__head {
